@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Order</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Food FeedBack</h1>
+    </header>
+
+    <main>
+
+        <aside>
+            <h2>How much your does baby like the school's food?</h2>
+
+            <form>
+                <label for="name-input">Baby Name:</label>
+                <input type='text' id="name-input"/>
+
+                <label for="food-select">Food:</label>
+                <select id="food-select"></select>
+
+                <h4>Day</h4>
+                <div class="radio">
+                    <label for="day-one">1:</label>
+                    <input type="radio" name="day" value="1" id="day-one" checked="true"/>
+                </div>
+
+                <div class="radio">
+                    <label for="day-two">2:</label>
+                    <input type="radio" name="day" value="2" id="day-two"/>
+                </div>
+
+                <div class="radio">
+                    <label for="day-three">3:</label>
+                    <input type="radio" name="day" value="3" id="day-three"/>
+                </div>
+
+                <div class="radio">
+                    <label for="day-four">4:</label>
+                    <input type="radio" name="day" value="4" id="day-four"/>
+                </div>
+
+                <div class="radio">
+                    <label for="day-five">5:</label>
+                    <input type="radio" name="day" value="5" id="day-five"/>
+                </div>
+                
+                <button>Add</button>
+            </form>
+        </aside>
+
+        <section id="food-list"></section>
+        
+            
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
