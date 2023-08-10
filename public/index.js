@@ -44,7 +44,7 @@ function getBabies() {
             res.data.forEach(elem => {
                 console.log(elem)
                 let foodCard = `<div class="food-card">
-                    <h2>${elem.baby_id}, ${elem.name}</h2>
+                    <h2>${elem.baby_name}, ${elem.name}</h2>
                     <h3>Day: ${elem.day}/5</h3>
                     <button onclick="deleteCard(${elem['baby_id']})">Delete</button>
                     </div>

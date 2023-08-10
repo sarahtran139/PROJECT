@@ -66,7 +66,7 @@ module.exports = {
       .catch(err => res.status(500).send(err))
     },
     getBabies: (req, res) => {
-      sequelize.query(`SELECT babies.name, babies.baby_id, foods.name, babies.day, foods.food_id, foods.name
+      sequelize.query(`SELECT babies.name as baby_name, babies.baby_id, foods.name, babies.day, foods.food_id
       FROM foods
       JOIN babies ON babies.food_id = foods.food_id`)
       .then(dbRes =>{

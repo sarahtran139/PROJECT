@@ -50,20 +50,3 @@ form {
     padding: 2px 10px;
 }
 
-.cute-pictures {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-   
-    padding: 10px 0;
-    box-sizing: border-box;
-}
-
-.cute-pictures img {
-    max-width: 400px; 
-    margin: 5 5px; 
-}
