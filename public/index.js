@@ -42,10 +42,13 @@ function getBabies() {
     axios.get('http://localhost:4004/babies/')
         .then(res => {
             res.data.forEach(elem => {
+                const dayNames = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
+                const selectedDayName = dayNames[elem.day - 1];
+                
                 console.log(elem)
                 let foodCard = `<div class="food-card">
                     <h2>${elem.baby_name}, ${elem.name}</h2>
-                    <h3>Day: ${elem.day}</h3>
+                    <h3>Day: ${selectedDayName}</h3>
                     <button onclick="deleteCard(${elem['baby_id']})">Delete</button>
                     </div>
                 `
