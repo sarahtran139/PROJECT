@@ -29,7 +29,7 @@ module.exports = {
             create table babies (
                 baby_id serial primary key,
                 name varchar,
-                day int,
+                day varchar,
                 food_id int references foods(food_id)
             );
         
